@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>FrameworksDrivers_ExternalService</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationLayer-UC\ApplicationLayer-UC.csproj" />
+    <ProjectReference Include="..\EnterpriseLayer\EnterpriseLayer.csproj" />
+    <ProjectReference Include="..\InterfaceAdapters-Adapters\InterfaceAdapters-Adapters.csproj" />
+  </ItemGroup>
+
+</Project>

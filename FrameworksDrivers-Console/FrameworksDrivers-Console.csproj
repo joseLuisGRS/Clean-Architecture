@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>FrameworksDrivers_Console</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationLayer-UC\ApplicationLayer-UC.csproj" />
+    <ProjectReference Include="..\EnterpriseLayer\EnterpriseLayer.csproj" />
+    <ProjectReference Include="..\InterfaceAdapters-Data\InterfaceAdapters-Data.csproj" />
+    <ProjectReference Include="..\InterfaceAdapters-Models\InterfaceAdapters-Models.csproj" />
+    <ProjectReference Include="..\InterfaceAdapters-Presenters\InterfaceAdapters-Presenters.csproj" />
+    <ProjectReference Include="..\InterfaceAdapters-Repository\InterfaceAdapters-Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
